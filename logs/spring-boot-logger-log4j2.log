@@ -1,0 +1,28 @@
+2022-01-19 23:57:21,318 INFO o.s.b.StartupInfoLogger [main] Starting GbShopApplication using Java 11.0.12 on DESKTOP-B792BNP with PID 14212 (D:\Lessons\Spring Framework Shop\Repos\gb-shop\target\classes started by artye in D:\Lessons\Spring Framework Shop\Repos\gb-shop)
+2022-01-19 23:57:21,333 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-01-19 23:57:22,111 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-19 23:57:22,236 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 114 ms. Found 3 JPA repository interfaces.
+2022-01-19 23:57:23,434 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-01-19 23:57:23,465 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-19 23:57:23,465 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-01-19 23:57:23,465 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-19 23:57:23,606 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-01-19 23:57:23,606 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2195 ms
+2022-01-19 23:57:23,778 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-01-19 23:57:24,082 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-01-19 23:57:24,207 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-19 23:57:24,410 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-19 23:57:25,254 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-19 23:57:25,566 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-01-19 23:57:26,998 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-19 23:57:27,030 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-19 23:57:27,530 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-19 23:57:28,134 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-01-19 23:57:28,165 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-19 23:57:28,165 INFO o.s.b.StartupInfoLogger [main] Started GbShopApplication in 8.314 seconds (JVM running for 11.08)
+2022-01-19 23:57:35,259 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-19 23:57:35,260 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-01-19 23:57:35,262 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-01-19 23:57:50,473 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-19 23:57:50,473 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-01-19 23:57:50,488 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
