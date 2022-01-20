@@ -2,6 +2,7 @@ package com.gb.gbshop.rest.version.v1.product;
 
 import com.gb.gbshop.components.product.ProductDto;
 import com.gb.gbshop.components.product.ProductFacade;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
+@RequiredArgsConstructor
 @ControllerAdvice
 @Lazy
 @RestController
@@ -19,10 +21,6 @@ import java.util.concurrent.ExecutionException;
 public class ProductController {
 
     private final ProductFacade productFacade;
-
-    public ProductController(ProductFacade productFacade) {
-        this.productFacade = productFacade;
-    }
 
     @GetMapping("/")
     public ResponseEntity<?> findAll() throws ExecutionException, InterruptedException {

@@ -1,6 +1,7 @@
 package com.gb.gbshop.components.category;
 
 import com.gb.gbshop.entity.category.Category;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Lazy;
@@ -15,6 +16,7 @@ import java.util.UUID;
 import java.util.concurrent.Future;
 import java.util.stream.Collectors;
 
+@RequiredArgsConstructor
 @Service
 @Lazy
 @Slf4j
@@ -22,12 +24,6 @@ public class CategoryFacadeImpl implements CategoryFacade {
 
     private final ModelMapper modelMapper;
     private final CategoryService categoryService;
-
-    public CategoryFacadeImpl(ModelMapper modelMapper,
-                              CategoryService categoryService) {
-        this.modelMapper = modelMapper;
-        this.categoryService = categoryService;
-    }
 
     @Override
     @Async

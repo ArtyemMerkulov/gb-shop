@@ -2,6 +2,7 @@ package com.gb.gbshop.rest.version.v1.category;
 
 import com.gb.gbshop.components.category.CategoryDto;
 import com.gb.gbshop.components.category.CategoryFacade;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
+@RequiredArgsConstructor
 @ControllerAdvice
 @Lazy
 @RestController
@@ -19,10 +21,6 @@ import java.util.concurrent.ExecutionException;
 public class CategoryController {
 
     private final CategoryFacade categoryFacade;
-
-    public CategoryController(CategoryFacade categoryFacade) {
-        this.categoryFacade = categoryFacade;
-    }
 
     @GetMapping("/")
     public ResponseEntity<?> findAll() throws ExecutionException, InterruptedException {

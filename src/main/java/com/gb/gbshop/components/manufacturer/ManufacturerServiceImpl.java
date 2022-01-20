@@ -1,6 +1,7 @@
 package com.gb.gbshop.components.manufacturer;
 
 import com.gb.gbshop.entity.manufacturer.Manufacturer;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.data.jpa.repository.Modifying;
@@ -11,16 +12,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+@RequiredArgsConstructor
 @Service
 @Lazy
 @Slf4j
 public class ManufacturerServiceImpl implements ManufacturerService {
 
     private final ManufacturerRepository manufacturerRepository;
-
-    public ManufacturerServiceImpl(ManufacturerRepository manufacturerRepository) {
-        this.manufacturerRepository = manufacturerRepository;
-    }
 
     @Override
     public List<Manufacturer> findAll() {
